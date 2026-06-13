@@ -1,0 +1,9 @@
+# Render Blueprint — Studio Empire: Backlot (static playable)
+# If you connect this repo to Render as a Blueprint, it auto-creates the static site.
+services:
+  - type: web
+    name: studio-empire-backlot
+    runtime: static
+    buildCommand: ""        # nothing to build — index.html is self-contained
+    staticPublishPath: .    # serve the repo root (index.html lives here)
+    pullRequestPreviewsEnabled: false
